@@ -1,0 +1,32 @@
+// Breadcrumps
+.breadcrumps {
+  padding-top: 30px;
+  padding-bottom: 40px;  
+  &__wrapper {
+    display: flex;
+  }
+  a { 
+    font-size: 14px;
+    line-height: 19px;
+    color: $blue-color;
+    &:last-child {  
+      
+      font-size: 14px;
+      line-height: 19px;  
+      color: $gray-color;
+    }
+    &:not(:last-child) {
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      &::after {       
+        margin-left: 17px; 
+        content: '';
+        display: block;
+        width: 6px;
+        height: 8px;
+        background: url('@img/breadcrumps/arrow-right.svg') no-repeat center center / 100%;
+      }    
+    }
+  }
+}

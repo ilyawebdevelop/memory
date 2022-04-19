@@ -1,0 +1,67 @@
+// Memory-slider
+.memory-slider {
+  background: #fafafa url('@img/memory-slider/Russia.png') no-repeat center center / cover; 
+  &-img {
+    margin-bottom: 15px;
+    width: 233px;
+  }
+  &__name {
+    color: $blue-color;   
+    font-weight: $bold;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    span {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &:hover {
+      color: $blue-color;   
+    }
+  }
+  &__life {
+    width: 233px;
+  }
+  &__life-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+  &__life-title {    
+    font-size: 14px;
+    line-height: 19px;
+    color: $gray-color;
+  }
+  &__life-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: $main-color;
+  }
+}
+.memory_slider-container {
+  position: relative;
+}
+.memory-arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: opacity 0.2s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.memory-button-prev {
+  left: -100px;
+}
+.memory-button-next {
+  
+  right: -60px;
+  img {
+    transform: rotate(180deg);
+  }
+}

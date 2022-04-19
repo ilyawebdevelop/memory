@@ -1,0 +1,80 @@
+// contacts
+.contacts-page {
+  padding-top: 0;
+  padding-bottom: 279px;
+  &__title {
+    margin-bottom: 66px;    
+    text-transform: uppercase;
+  }
+  &__personal {
+    &-item {
+      margin-bottom: 18px;
+    }
+    &-name {      
+      font-weight: $semibold;
+      font-size: 20px;
+      line-height: 27px; 
+      margin-bottom: 6px;
+    }
+    &-text {
+      color: #3C3C3C;
+      font-size: 15px;
+      line-height: 30px;
+      display: inline-block;
+    }
+  }
+  &__form {
+    background: #E0E0E0;
+    padding: 40px;
+    &-title {      
+      font-weight: $semibold;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 20px;
+    }
+    .input-wrapper {
+      margin-bottom: 20px;
+      input {
+        width: 100%;
+        padding: 15px 20px;
+        background-color: $white-color;
+        margin-bottom: 10px;
+        &::placeholder {
+          color: #514E4E;
+        }
+      }
+      textarea {
+        padding: 15px 20px;
+        width: 100%;
+        background-color: $white-color;
+        &::placeholder {
+          color: #514E4E;
+        }
+      }
+    }   
+    &-bottom {
+      display: flex;
+      align-items: center;
+    } 
+  }
+}
+.agreement {
+  margin-left: 16px;
+  label {
+    font-size: 15px;
+    line-height: 30px;   
+    letter-spacing: 0.02em; 
+    color: #514E4E;
+  }
+  span {
+    display: contents;     
+    font-size: 15px;
+    line-height: 30px;   
+    letter-spacing: 0.02em; 
+    color: #514E4E;
+    font-weight: $semibold;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

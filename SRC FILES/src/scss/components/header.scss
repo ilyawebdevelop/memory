@@ -1,0 +1,47 @@
+// Header
+.header {
+  background-color: $orange-color;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+    &-item { 
+      font-size: 18px;
+      line-height: 25px;
+      color: $white-color;
+      &:not(:last-child){
+        margin-right: 40px;
+      }
+    }
+  }
+  &__search-wrapper {
+    display: flex;
+  }
+}
+.logo {
+  display: flex;
+  img {
+    &:first-child {
+      margin-right: 9px; 
+    }
+  }
+}
+.search-input {
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $white-color;
+  width: 240px;
+  color: $white-color;
+  height: 32px;
+  font-size: 18px;
+  &::placeholder {
+    color: $white-color;
+  }
+}

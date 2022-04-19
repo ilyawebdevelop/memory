@@ -1,0 +1,64 @@
+// biography
+.biography {
+  padding-top: 0;
+  &__title {
+    margin-bottom: 53px;
+  }
+  &__descr-img {
+    margin-right: 60px;
+    width: 379px;
+  }
+  &__descr {
+    padding-bottom: 30px;
+    display: flex;
+    &-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-life {
+      padding-bottom: 31px;
+      border-bottom: 2px solid #282424;
+      margin-bottom: 37px;
+    }
+    &-wrapper {
+      display: flex;
+      width: 262px;
+      justify-content: space-between;
+      &:not(:last-child){
+        margin-bottom: 12px;
+      }
+    }
+    &-name {     
+      font-weight: $semibold;
+      font-size: 15px;
+      line-height: 20px;     
+    }
+    &-text {
+      font-size: 15px;
+      line-height: 20px;  
+    }
+  }
+  &__video {
+    margin-top: 20px;
+    iframe {
+      width: 100%;
+      height: 480px;
+    }
+  }
+  .book__card {
+    margin-bottom: 40px;
+  }
+  &-sidebar {
+    &-title {      
+      font-weight: $semibold;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 40px;
+    }
+  }
+  p {
+    margin-bottom: 16px;
+  }
+}

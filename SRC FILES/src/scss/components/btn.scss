@@ -1,0 +1,105 @@
+// btn
+.input-group .search-btn {
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  padding: 0;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.input-group {
+  width: max-content;
+  align-items: center;
+  padding-right: 20px;
+}
+.send-photo-btn {
+  background-color: $orange-dark-color;
+  height: 80px;
+  width: 203px;
+  font-weight: $semibold;
+  ont-size: 16px;
+  line-height: 22px;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: opacity 0.2s linear;
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: url('@img/header/photos-img.svg') no-repeat center center / cover;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.biography-sidebar-btn {  
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 22px;  
+  width: 200px;
+  text-align: center;
+  border: 2px solid #282424;
+  padding: 13px 0;
+}
+.media__btn-send { 
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white-color;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange-dark-color;
+  padding: 18px 0;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+  margin-left: auto;
+  &::before {
+    content: '';
+    width: 25px;
+    height: 20px;
+    display: block;
+    margin-right: 10px;
+    background: url('@img/media/btn-img.svg') no-repeat center center / cover;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.single-media__sidebar-btn {
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 22px;  
+  width: 214px;
+  text-align: center;
+  border: 2px solid #282424;
+  padding: 13px 0;
+}
+.single-news__sidebar-btn {
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 22px;  
+  width: 140px;
+  text-align: center;
+  border: 2px solid #282424;
+  padding: 13px 0;
+}
+.contacts-page__form-btn {  
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 22px; 
+  color: $white-color;
+  background-color: $orange-dark-color;
+  padding: 14px 20px;
+  text-align: center;
+  transition: opacity 0.2s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}

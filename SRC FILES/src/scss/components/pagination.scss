@@ -1,0 +1,67 @@
+// pagination
+.pagination {
+  padding-bottom: 96px;  
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-left {
+    margin-right: 5px;
+  }
+  &-right {
+    margin-left: 5px;
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {  
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    a {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light-color;     
+    }
+    &.more {
+      a {
+        background-color: $white-color;
+      }      
+    }
+    &.start {    
+      font-size: 15px;
+      line-height: 20px;     
+      text-decoration-line: underline;  
+      color: #514E4E;      
+    }
+    &.finish {
+      font-size: 15px;
+      line-height: 20px;     
+      text-decoration-line: underline;  
+      color: #514E4E;     
+    }
+    &.active {
+      a {       
+        font-weight: $bold;
+        font-size: 15px;
+        line-height: 20px;       
+        color: $orange-dark-color;
+      }
+    }
+  }
+  button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: $light-color;
+    transition: opacity 0.2s linear;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

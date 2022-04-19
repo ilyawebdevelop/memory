@@ -1,0 +1,134 @@
+// Specifications
+html,
+body {
+	height: 100%;
+	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  color: $main-color;
+  font-family: $font-family-opensans;
+  font-size: 16px ;
+  font-weight: $regular;  
+}
+section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+.section-title {
+  margin-bottom: 45px;
+}
+.article-title {
+  font-family: 'Century Gothic';  
+  font-weight: $bold;
+  font-size: 48px;
+  line-height: 59px;
+  span {
+    font-weight: $regular;
+  }
+}
+.text-large {  
+  font-size: 20px;
+  line-height: 36px; 
+}
+.post-title {  
+  font-weight: $semibold;
+  font-size: 18px;
+  line-height: 25px;  
+  color: $blue-color;
+  &::before {
+    margin-right: 8px;
+    content: '';
+  }
+  &.audio {
+    &::before {
+      width: 24px;
+      height: 24px;
+      background: url('@img/gallery/audio.svg') no-repeat center center / cover;
+    }
+  }
+  &.video {
+    &::before {
+      width: 24px;
+      height: 24px;
+      background: url('@img/gallery/Video.svg') no-repeat center center / cover;
+    }
+  }
+  &.gallery {
+    &::before {
+      width: 24px;
+      height: 24px;
+      background: url('@img/media/documents.svg') no-repeat center center / cover;
+    } 
+  }
+  &.photo {
+    &::before {
+      width: 24px;
+      height: 24px;
+      background: url('@img/media/photos.svg') no-repeat center center / cover;
+    } 
+  }
+  &:hover {
+    color: $blue-color;
+  }
+}
+.post-date { 
+  font-size: 13px;
+  line-height: 18px;
+  color: #514E4E;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container-1440{
+  max-width: 1420px; 
+  padding: 0 var(--container-offset);
+  margin: 0 auto;  
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $font-family-century;
+  font-weight: $bold;
+  color: #282424;
+}
+h1 {
+  color: #F4F4F4;
+  font-size: 48px;
+  line-height: 59px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 37px;
+  color: $main-color;
+  a {
+    display: inline-block;
+  }
+  span {
+    color: $orange-dark-color;
+    position: relative;
+    padding-bottom: 4px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: $orange-dark-color;
+    }
+  }  
+}
+
+
+
+
+

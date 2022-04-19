@@ -1,0 +1,58 @@
+// intro
+.intro {
+  background-color: $brown-color;
+  height: 458px;
+  &__container {
+    height: 100%;
+  }
+  &__inner {
+    background: url('@img/intro/brown-bg.png') no-repeat center center / cover;
+    height: 100%;  
+    background-position-x: -165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__descr{  
+    font-size: 18px;
+    line-height: 30px;  
+    color: $light-color;
+    max-width: 450px;
+    margin-bottom: 60px;
+  }
+  &-bg-photo {
+    width: 100%;
+    margin-left: auto;
+    height: 100%;
+  }
+  &-bg-color {
+    background-color: $brown-color;
+    background-position: left;
+    background-size: 20%;
+    height: 100%;
+  }
+  &__name {  
+    font-weight: $semibold;
+    font-size: 15px;
+    line-height: 30px; 
+    color: $orange-color;
+    margin-bottom: 6px;
+  }
+  &__text {   
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 215px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+}

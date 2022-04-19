@@ -1,0 +1,29 @@
+// Colors
+$main-color: #282424;
+$white-color: #fff;
+$light-color: #F4F4F4;
+$orange-color: #DC4128;
+$orange-dark-color: #D33218;
+$brown-color: #282424;
+$blue-color: #4E80CB;
+$gray-color: #9A9898;
+
+// Fonts
+$font-family-opensans: 'Open Sans', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-century: 'centurygothic_bold', sans-serif;
+
+// Font-weights
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+
+ // Containers
+:root { 
+  --content-width: 1330px;
+  --content-fluid-width: 1790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+}
