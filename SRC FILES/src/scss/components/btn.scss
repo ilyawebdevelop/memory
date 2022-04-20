@@ -7,6 +7,9 @@
   &:focus {
     box-shadow: none;
   }
+  @media (max-width: 1199px){
+    right: 10px;
+  }
 }
 .input-group {
   width: max-content;
@@ -18,9 +21,10 @@
   height: 80px;
   width: 203px;
   font-weight: $semibold;
-  ont-size: 16px;
+  font-size: 16px;
   line-height: 22px;
   color: $white-color;
+  justify-content: center;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -35,6 +39,12 @@
   }
   &:hover {
     opacity: 0.8;
+  }
+  @media (max-width: 1199px){
+    padding: 0 10px;
+  }
+  @media (max-width: 991px){
+    height: 60px;
   }
 }
 .biography-sidebar-btn {  
@@ -98,6 +108,19 @@
   background-color: $orange-dark-color;
   padding: 14px 20px;
   text-align: center;
+  transition: opacity 0.2s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.form-photo__btn {  
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white-color;
+  width: 129px;
+  padding: 14px 0;
+  background: $orange-dark-color;
   transition: opacity 0.2s linear;
   &:hover {
     opacity: 0.8;

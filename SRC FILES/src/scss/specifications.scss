@@ -14,6 +14,10 @@ body {
 section {
   padding-top: 72px;
   padding-bottom: 96px;
+  @media (max-width: 767px){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .section-title {
   margin-bottom: 45px;
@@ -104,6 +108,10 @@ h1 {
   color: #F4F4F4;
   font-size: 48px;
   line-height: 59px;
+  @media (max-width: 767px){
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 h2 {
   font-size: 30px;
@@ -126,6 +134,10 @@ h2 {
       background-color: $orange-dark-color;
     }
   }  
+  @media (max-width: 767px){
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 

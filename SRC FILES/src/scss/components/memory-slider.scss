@@ -4,6 +4,9 @@
   &-img {
     margin-bottom: 15px;
     width: 233px;
+    @media (max-width: 575px){
+      margin: 0 auto 15px;
+    }
   }
   &__name {
     color: $blue-color;   
@@ -19,9 +22,15 @@
     &:hover {
       color: $blue-color;   
     }
+    @media (max-width: 575px){
+      text-align: center;
+    }
   }
   &__life {
     width: 233px;
+    @media (max-width: 575px){
+      margin: 0 auto;
+    }
   }
   &__life-wrapper {
     display: flex;
@@ -57,11 +66,23 @@
 }
 .memory-button-prev {
   left: -100px;
+  @media (max-width: 1499px){
+    left: -44px;
+  }
+  @media (max-width: 1300px){
+    display: none;
+  }
 }
 .memory-button-next {
   
   right: -60px;
   img {
     transform: rotate(180deg);
+  } 
+  @media (max-width: 1499px){
+    right: -44px;
+  }  
+  @media (max-width: 1300px){
+    display: none;
   }
 }

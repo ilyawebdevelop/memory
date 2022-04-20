@@ -33,9 +33,22 @@
           <li class="header__nav-item">
             <a href="contacts.html">Контакты</a>
           </li>
+          <div class="header__search-wrapper d-block d-lg-none">
+            <div class="input-group">
+              <div class="form-outlines">
+                <input type="search" id="form1" class="search-input" placeholder="Поиск" />           
+              </div>
+              <button type="button" class="btn search-btn">
+                <img src="img/header/search.svg" alt="search-icon">
+              </button>
+            </div>
+            <button class="btn-reset send-photo-btn" data-graph-path="send-photo">Отправить фото </button>
+        
+          </div>
         </ul>
+     
       </nav>
-      <div class="header__search-wrapper">
+      <div class="header__search-wrapper d-none d-lg-flex">
         <div class="input-group">
           <div class="form-outlines">
             <input type="search" id="form1" class="search-input" placeholder="Поиск" />           
@@ -45,9 +58,15 @@
           </button>
         </div>
         <button class="btn-reset send-photo-btn" data-graph-path="send-photo">Отправить фото </button>
-       
+    
       </div>
-
+      <button class="burger menu" id="toggle" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <svg viewBox="0 0 48 48">
+          <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+          <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+          <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
@@ -121,7 +140,7 @@
 			<!-- photo-send -->
 <section class="photo-send" id="photo-send">
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-lg-5">
         <div class="photo-send__offer">
           <h2 class="section-title photo-send__title">
@@ -222,6 +241,90 @@
     </div><!-- /row -->
   </div><!-- /container -->
 </footer>
+<!-- modal-photo -->
+<div class="modal-photo">
+  <div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="send-photo">
+      <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+      <div class="graph-modal__content">
+        <div class="modal-photo__title">Отправить фото</div>
+        <form class="modal-photo__form form-photo">
+          <div class="form-photo__input-wrapper">
+            <input type="text" placeholder="Ваше ФИО*">
+            <input type="email" placeholder="Ваш email*" class="input-second">
+            <input type="text" placeholder="ФИО ветерана*">
+            <div class="input-life">
+              <div class="input-life-wrapper">
+                <input type="date" placeholder="Дата рождения*">
+                <span>Дата рождения</span>
+              </div>
+              <div class="input-life-wrapper">
+                <input type="date" placeholder="Дата смерти*">
+                <span>Дата смерти</span>
+              </div>
+
+            </div>
+            <textarea name="form-photo-textarea" id="form-photo-textarea" cols="30" rows="4"
+              placeholder="Биография ветерана"></textarea>
+            <input type="text" placeholder="Добавьте ссылку на видео">
+          </div>
+          <div class="form-photo__files">
+            <input class="input-hide" type="file" id="selectedFile" style="display: none;" />           
+            <div class="form-photo__files-input" onclick="document.getElementById('selectedFile').click();">
+              Прикрепить архив с фотографиями 
+              <span> (max.200Mb)</span>              
+            </div>     
+          </div>
+          <div class="form-photo__bottom">
+            <button class="form-photo__btn">
+              Отправить
+            </button>
+            <div class="agreement">
+              <input type="checkbox" id="agreement-checkbox" class="custom-checkbox">
+              <label for="agreement-checkbox" class="custom-checkbox-text">Согласен на <span>обработку персональных
+                  данных</span> </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="graph-modal__container modal-files" role="dialog" aria-modal="true" data-graph-target="modal-files">
+      <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <div class="modal-files__title">Отправить материал</div>
+        <p class="modal-files__text">Вы сможете прислать нам материалы касательно Великой Отечественной Войны, ветеранов
+          и участников ВОВ. Материалы принимаются в виде ссылок на аудио- и видеохостинги, на фотоархивы. Отдельные
+          фотографии и документы объемом до 200 мб можно прикрепить к заявке. Мы саяжемся с вами для уточнения источника
+          и другой информации.</p>
+        <form class="modal-files__form form-files">
+          <div class="form-files__input-wrapper">
+            <input type="text" placeholder="Ваше ФИО*">
+            <input type="email" placeholder="Ваш email*">
+            <input type="text" placeholder="Добавьте ссылку на видео- и аудиохостинг или фотоархив.">
+          </div>
+          <div class="form-files__files">
+            <input type="file" id="selectedFile1" style="display: none;" />
+            <div class="form-files__files-input" onclick="document.getElementById('selectedFile1').click();">
+              Прикрепить архив
+              <span> (max.200Mb)</span>              
+            </div>  
+          </div>
+          <div class="form-files__bottom">
+            <button class="form-photo__btn">
+              Отправить
+            </button>
+            <div class="agreement">
+              <input type="checkbox" id="agreement-checkbox1" class="custom-checkbox">
+              <label for="agreement-checkbox1" class="custom-checkbox-text">Согласен на <span>обработку персональных
+                  данных</span> </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 	</div>
 
 	<script src="js/app.min.js"></script>

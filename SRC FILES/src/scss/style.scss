@@ -1,5 +1,5 @@
 // стили для модального окна
-// @import "../../node_modules/graph-modal/dist/graph-modal.min";
+@import "../../node_modules/graph-modal/dist/graph-modal.min";
 // стили для табов
 // @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
 
@@ -20,6 +20,7 @@
 
 // Подключения компонентов страницы
 @import "./components/socials";
+@import "./components/burger";
 @import "./components/pagination";
 @import "./components/checkbox";
 @import "./components/breadcrumps";
@@ -35,6 +36,7 @@
 @import "./components/biography";
 @import "./components/media";
 @import "./components/contacts";
+@import "./components/modal";
 
 
 
