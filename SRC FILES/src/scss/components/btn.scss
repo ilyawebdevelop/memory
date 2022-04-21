@@ -77,9 +77,21 @@
     display: block;
     margin-right: 10px;
     background: url('@img/media/btn-img.svg') no-repeat center center / cover;
+    @media (max-width: 1199px){
+      width: 23px;
+      height: 18px;
+      margin-right: 8px;
+    }
   }
   &:hover {
     opacity: 0.8;
+  }
+  @media (max-width: 1199px){
+    width: 100%;
+    font-size: 15px;
+  }
+  @media (max-width: 991px){
+    margin-bottom: 20px;
   }
 }
 .single-media__sidebar-btn {
@@ -112,6 +124,10 @@
   &:hover {
     opacity: 0.8;
   }
+  @media (max-width: 575px){
+    width: 115px;
+    padding: 14px 10px;
+  }
 }
 .form-photo__btn {  
   font-weight: $semibold;
@@ -124,5 +140,8 @@
   transition: opacity 0.2s linear;
   &:hover {
     opacity: 0.8;
+  }
+  @media (max-width: 991px){    
+    padding: 14px 10px;
   }
 }

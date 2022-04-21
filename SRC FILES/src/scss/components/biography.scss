@@ -3,10 +3,25 @@
   padding-top: 0;
   &__title {
     margin-bottom: 53px;
+    span {
+      @media (max-width: 575px){
+        font-family: $font-family-century;
+        font-weight: $regular;
+      }
+    }
+    @media (max-width: 575px){
+      text-transform: uppercase;
+    }
   }
   &__descr-img {
     margin-right: 60px;
     width: 379px;
+    @media (max-width: 767px){
+      margin-bottom: 30px;
+    }
+    @media (max-width: 575px){
+      width: 100%;
+    }
   }
   &__descr {
     padding-bottom: 30px;
@@ -16,6 +31,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+     
     }
     &-life {
       padding-bottom: 31px;
@@ -39,26 +55,46 @@
       font-size: 15px;
       line-height: 20px;  
     }
+    @media (max-width: 767px){
+      flex-direction: column;
+    }
   }
   &__video {
     margin-top: 20px;
     iframe {
       width: 100%;
       height: 480px;
+      @media (max-width: 575px){
+        height: 200px;
+      }
     }
   }
   .book__card {
     margin-bottom: 40px;
   }
-  &-sidebar {
+  &-sidebar {    
     &-title {      
       font-weight: $semibold;
       font-size: 20px;
       line-height: 27px;
       margin-bottom: 40px;
     }
+    @media (max-width: 991px){
+      margin-top: 70px;
+    }
   }
   p {
     margin-bottom: 16px;
+  }
+  @media (max-width: 767px){
+    padding-top: 30px;
+  }
+  .memory-slider-img {
+    @media (max-width: 575px){
+     margin: 0 0 15px 0;
+    }
+  }
+  .memory-slider__life {
+    margin: 0;
   }
 }

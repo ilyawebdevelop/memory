@@ -14,10 +14,18 @@
       font-size: 20px;
       line-height: 27px;
       color: #514E4E;
+      @media (max-width: 575px){
+        display: none;
+      }
     }
   }
   &__card {
     margin-bottom: 56px;
+    .memory-slider__name {
+      @media (max-width: 575px){
+        text-align: start;
+      }
+    }    
   }
   &__sort {
     display: flex;
@@ -27,6 +35,9 @@
       line-height: 30px;    
       color: $gray-color;
       margin-right: 12px;
+      @media (max-width: 991px){
+        display: none;
+      }
     }
     &-btn {        
       &:hover {
@@ -81,13 +92,24 @@
         line-height: 30px;
         color: $gray-color;
       }
+      @media (max-width: 767px){
+        width: 200px;
+      }
     }
   }
-  .memory-slider-img {
+  .memory-slider-img {    
     width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .memory-slider__life {
     width: 100%;
+  }
+  @media (max-width: 767px){
+    padding-top: 30px;
   }
 }
 .search-wrapper {

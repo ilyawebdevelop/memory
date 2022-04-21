@@ -4,12 +4,18 @@
   &__inner {
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 575px){
+      justify-content: center;
+    }
   }
   &-left {
     margin-right: 5px;
   }
   &-right {
     margin-left: 5px;
+    @media (max-width: 575px){
+      margin-left: 0;
+    }
   }
   &__items {
     display: flex;
@@ -50,6 +56,12 @@
         line-height: 20px;       
         color: $orange-dark-color;
       }
+      @media (max-width: 575px){
+        display: flex;
+      }
+    }
+    @media (max-width: 575px){
+      display: none;
     }
   }
   button {
@@ -63,5 +75,8 @@
     &:hover {
       opacity: 0.8;
     }
+  }
+  @media (max-width: 767px){
+    padding-bottom: 50px;    
   }
 }

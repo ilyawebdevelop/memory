@@ -11,6 +11,9 @@ body {
   font-size: 16px ;
   font-weight: $regular;  
 }
+body.hidden {
+  overflow: hidden
+}
 section {
   padding-top: 72px;
   padding-bottom: 96px;
@@ -23,17 +26,25 @@ section {
   margin-bottom: 45px;
 }
 .article-title {
-  font-family: 'Century Gothic';  
+  font-family: $font-family-century;  
   font-weight: $bold;
   font-size: 48px;
   line-height: 59px;
   span {
     font-weight: $regular;
   }
+  @media (max-width: 767px){
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 .text-large {  
   font-size: 20px;
   line-height: 36px; 
+  @media (max-width: 1199px){
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 .post-title {  
   font-weight: $semibold;
@@ -74,6 +85,10 @@ section {
   }
   &:hover {
     color: $blue-color;
+  }
+  @media (max-width: 1199px){
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 .post-date { 

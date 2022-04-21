@@ -23,6 +23,12 @@
       &:nth-child(2){
         margin-bottom: 35px; 
       }
+      @media (max-width: 991px){
+        height: 100%;
+      }
+    }
+    @media (max-width: 991px){
+      height: auto;
     }
   }
   &__item {
@@ -40,6 +46,9 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+  @media (max-width: 767px){
+    padding-bottom: 15px;
   }
 }
 .gallery-bg {

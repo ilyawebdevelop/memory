@@ -1,7 +1,24 @@
 // news
 .news {
+  &__card {
+    margin-bottom: 30px;
+  }
   &__img {
-    margin-bottom: 15px;
+    margin-bottom: 15px;   
+    img {
+      @media (max-width: 575px){     
+        width: 100%;   
+        height: 100%;
+        object-fit: cover;
+      }
+    }  
+    @media (max-width: 767px){
+      margin-bottom: 0;
+    } 
+    @media (max-width: 575px){
+      width: 215px;     
+      height: 100px;
+    } 
   }
   &__title {
     margin-bottom: 8px;
@@ -10,6 +27,18 @@
     font-size: 16px;
     line-height: 28px;
     color: $gray-color;
+    @media (max-width: 1199px){
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  &__bottom {
+    @media (max-width: 767px){
+      padding: 7px 0px 7px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
   .post-title {
     &::before {
@@ -19,16 +48,22 @@
       color: $blue-color;
     }
   }
+  @media (max-width: 767px){    
+    padding-bottom: 20px;
+  }
 }
 .news-page{
   padding-top: 0;
   padding-bottom: 0;
   &__item {
     margin-bottom: 56px;
+    @media (max-width: 767px){
+      margin-bottom: 30px;
+    }
   }
   &__title {
     text-transform: uppercase;
-    margin-bottom: 46px;
+    margin-bottom: 46px;  
   }
   .post-title {
     &::before {
@@ -40,13 +75,28 @@
   }
   .post-date {
     margin-bottom: 8px;
+    @media (max-width: 767px){
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 767px){
+    padding-top: 30px;
+  }
+  .news__img {
+    @media (max-width: 575px){
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
 .single-news {
   padding-top: 0;  
   &__title {
-    margin-bottom: 30px;     
+    margin-bottom: 30px;    
+    @media (max-width: 767px){
+      text-transform: uppercase;
+    } 
   }
   &__img {
     margin-bottom: 23px;
@@ -56,6 +106,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      
+    }
+    @media (max-width: 575px){
+      height: 210px;
     }
   }
   &__date {    
@@ -87,5 +141,22 @@
   }
   .post-date {
     margin-bottom: 8px;
+    @media (max-width: 767px){
+      margin-top: 15px;
+    }
   }
+  .news__img{
+    @media (max-width: 767px){
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 767px){
+    padding-top: 30px;
+  }
+}
+.news__main-title {
+  @media (max-width: 767px){
+    margin-bottom: 35px;
+  }  
 }

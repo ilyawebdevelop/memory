@@ -5,6 +5,9 @@
   &__title {
     margin-bottom: 65px;
     text-transform: uppercase;
+    @media (max-width: 767px){
+      margin-bottom: 30px;
+    }
   }  
   &__navigation {
     
@@ -13,7 +16,10 @@
       justify-content: space-between;
     }
     &-item {
-
+      background: #F4F4F4;
+      padding: 0 20px;
+      height: 60px;
+      display: flex;      
       &.active {
         a {
           filter: grayscale(0%);
@@ -39,11 +45,18 @@
           display: block;
           width: 22px;
           height: 15px;
+          @media (max-width: 767px){
+            margin-right: 0;
+          }
         }
         &:hover {
           filter: grayscale(0%);
           color: $orange-dark-color;
           opacity: 1;
+        }
+        @media (max-width: 1199px){
+          font-size: 18px;
+          line-height: 24px;
         }
       }
       &.all {
@@ -91,13 +104,29 @@
           }
         }
       }
+      @media (max-width: 767px){
+        width: 57px;
+        height: 50px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
   .gallery__item {
     margin-bottom: 56px;
     &-img {
       height: 240px;
+      @media (max-width: 991px){
+        height: auto;
+      }
     }
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px){
+    padding-top: 30px;
   }
 }
 .navigation {
@@ -109,12 +138,18 @@
   padding-top: 0;
   padding-bottom: 0;
   &__title {
-    margin-bottom: 30px;     
+    margin-bottom: 30px;    
+    @media (max-width: 767px){
+      text-transform: uppercase;
+    } 
   }
   &__video {
     iframe {
       width: 100%;
       height: 480px;
+      @media (max-width: 767px){
+        height: 210px;
+      }
     }
   }
   &__date {    
@@ -138,6 +173,20 @@
   }
   p {
     margin-bottom: 55px;
+    @media (max-width: 767px){
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+  pre {
+    @media (max-width: 767px){
+      font-size: 14px;
+      line-height: 28px;
+    }    
+  }
+  @media (max-width: 767px){
+    padding-top: 30px;    
+    padding-bottom: 60px;
   }
 }
 .song {

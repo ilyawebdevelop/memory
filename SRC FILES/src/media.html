@@ -4,26 +4,31 @@
 "title":"Медиатека"
 })
 
-<body>	
+<body>
 	<div class="wrapper">
 		@@include('html/header.html',{})
 		<main class="main">
 			@@include('html/breadcrumps.html',{
-				"second":"Медиатека"			
+			"second":"Медиатека"
 			})
 			@@include('html/media.html',{})
 			@@include('html/pagination.html',{})
 			@@include('html/photo-send.html',{})
 
 		</main>
-		@@include('html/footer.html',{})		
-	</div> 
+		@@include('html/footer.html',{})
+	</div>
 
 	<script src="js/app.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		if (window.matchMedia("(max-width: 768px)").matches) {
+			let naviItems = document.querySelectorAll('.media__navigation-item a');
+			naviItems.forEach((el) => {
+				el.innerHTML = '';
+			})
+		} 
+	</script>
 </body>
 
 </html>
-
-
-
-

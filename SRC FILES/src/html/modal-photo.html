@@ -58,7 +58,7 @@
           <div class="form-files__input-wrapper">
             <input type="text" placeholder="Ваше ФИО*">
             <input type="email" placeholder="Ваш email*">
-            <input type="text" placeholder="Добавьте ссылку на видео- и аудиохостинг или фотоархив.">
+            <input type="text" id="form-files__input-video-link" placeholder="Добавьте ссылку на видео- и аудиохостинг или фотоархив.">
           </div>
           <div class="form-files__files">
             <input type="file" id="selectedFile1" style="display: none;" />
@@ -82,3 +82,12 @@
     </div>
   </div>
 </div>
+
+<script>
+  if (window.matchMedia("(max-width: 991px)").matches) {
+      let formTextarea = document.getElementById('form-photo-textarea');     
+      let inputVideoLink = document.getElementById('form-files__input-video-link');      
+      formTextarea.setAttribute("rows", "3");
+      inputVideoLink.setAttribute("placeholder", "Добавьте ссылку на видео");
+	} 
+</script>
