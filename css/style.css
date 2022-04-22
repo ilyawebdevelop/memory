@@ -12062,7 +12062,7 @@ section {
 }
 
 .article-title {
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
@@ -12157,7 +12157,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: 700;
   color: #282424;
 }
@@ -13646,7 +13646,7 @@ h2 span::after {
 }
 @media (max-width: 575px) {
   .biography__title span {
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     font-weight: 400;
   }
 }
@@ -14067,7 +14067,7 @@ code, kbd, pre, samp {
 }
 
 .modal-photo__title {
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -14225,7 +14225,7 @@ code, kbd, pre, samp {
 }
 
 .modal-files__title {
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
